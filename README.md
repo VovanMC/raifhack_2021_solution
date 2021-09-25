@@ -31,7 +31,7 @@ def tf_custom_loss(y_true, y_pred):
     big_error_loss = 9.0 * tf.ones_like(small_error_loss) + tf.abs(error)    
     return tf.where(is_small_error, small_error_loss, big_error_loss)
 ```
-![Alt text](loss_pic.png?raw=true "График функции потерь Vs Метрика задачи")
+![Loss pic](loss_pic.png?raw=true "График функции потерь Vs Метрика задачи")
 
 # Структура NN
 
@@ -79,6 +79,7 @@ Total params: 36,973
 Trainable params: 36,973
 Non-trainable params: 0
 ```
+![Loss pic](model.png?raw=true "Модель нейронной сети")
 
 
 
