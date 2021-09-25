@@ -81,7 +81,18 @@ Non-trainable params: 0
 ```
 ![Loss pic](model.png?raw=true "Модель нейронной сети")
 
+# Запуск train_predict.py
+1) Установить опцию обучения для NN на GPU.
 
+```
+IS_GPU
+```
+2) Убедиться, что в папке с ноутбуком есть файлы: train.csv, test.csv и test_submission.csv
+3) Вызвать код командой:
+
+```
+python3 train_predict.py
+```
 
 # Запуск notebook
 Для запуска ноутбука нужно убедиться:
